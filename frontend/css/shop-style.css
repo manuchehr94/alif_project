@@ -1,0 +1,81 @@
+.h-of-forms {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 10px;
+}
+
+.form-of-order {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.form-of-order input[type=text],
+.form-of-order input[type=email],
+.form-of-order select
+{
+    padding: 5px;
+    line-height: 20px;
+    margin: 5px;
+    width: 100%;
+}
+
+.form-of-order select {
+    padding: 10px 0;
+    width: 315px;
+}
+
+.form-of-order label {
+    margin: 5px 0 5px 5px;
+}
+
+
+.form-of-order textarea {
+    width: 310px;
+    margin-left: 5px;
+    height: 150px;
+    margin: 10px 0 0 5px;
+}
+
+#btn-create-order,
+.form-of-order button,
+.form-of-login input[type=submit]
+{
+    text-decoration: none;
+    color: #fff;
+    background: #777;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+}
+
+.form-of-order button {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.form-of-login {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-of-login input[type=text],
+.form-of-login input[type=password],
+.form-of-login input[type=email]
+{
+    padding: 5px;
+    line-height: 20px;
+    margin: 5px;
+    width: 100%;
+}
+
+.form-of-login label,
+.form-of-login input[type=submit]
+{
+    margin-left: 5px;
+}
+
+.form-of-login input[type=submit] {
+    margin-top: 5px;
+    cursor: pointer;
+}
