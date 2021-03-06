@@ -11,13 +11,13 @@ include_once __DIR__ . "/../header.php";
                 </div>
                 <div class="smallView">
                     <div class="productFirstImg">
-                        <img src="/img/1.png" alt="inverted product">
+                        <img style="max-width: 42px; max-height: 48px" src="http://localhost/php/Alif_Academy_php/shop/uploads/products/<?=$oneProduct['picture']?>" alt="inverted product">
                     </div>
                     <div class="productSecondImg">
-                        <img src="/img/2.png" alt="panty product">
+                        <img style="max-width: 42px; max-height: 48px" src="http://localhost/php/Alif_Academy_php/shop/uploads/products/<?=$oneProduct['picture']?>" alt="inverted product">
                     </div>
                     <div class="productThirdImg">
-                        <img src="/img/3.png" alt="small product">
+                        <img style="max-width: 42px; max-height: 48px" src="http://localhost/php/Alif_Academy_php/shop/uploads/products/<?=$oneProduct['picture']?>" alt="inverted product">
                     </div>
                 </div>
             </div>
@@ -43,25 +43,25 @@ include_once __DIR__ . "/../header.php";
                         <span class="chooseQunatityText">Choose quantity</span>
                         <p>
                             <a class="increaseQunatity" href="#"><span>+</span></a>
-                            <span class="quantity">3</span>
+                            <span class="quantity"><?=$oneProduct['quantity']?></span>
                             <a  class="decreaseQunatity" href="#"><span>-</span></a>
                         </p>
                     </div>
                 </div>
                 <div class="priceImgOrder">
                     <p>Price:<?=$oneProduct['price']?>$</p>
-                    <div class="shareAndOrder">
-                        <div class="shareCartLike">
-                            <a href="#"><img src="/img/share.png" alt="share"></a>
-                            <a href="#"><img src="/img/cart_.png" alt="add to cart"></a>
-                            <a href="#"><img src="/img/like.png" alt="put like"></a>
+                    <form action="/?model=basket&action=addProduct" method="POST">
+                        <div class="shareAndOrder">
+                            <div class="shareCartLike">
+                                <a href="#"><img src="/img/share.png" alt="share"></a>
+                                <button class="cartIcon"><img src="/img/cart_.png" alt="add to cart"></button>
+                                <a href="#"><img src="/img/like.png" alt="put like"></a>
+                                <input type="hidden" name="quantity" value="2">
+                                <input type="hidden" name="product_id" value="<?=$oneProduct['id']?>">
+                                <button class="orderNow">Order Now</button>
+                            </div>
                         </div>
-                        <form action="/?model=basket&action=addProduct" method="POST">
-                            <input type="hidden" name="quantity" value="1">
-                            <input type="hidden" name="product_id" value="<?=$oneProduct['id']?>">
-                            <button class="orderNow">Order Now</button>
-                        </form>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

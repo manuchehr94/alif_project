@@ -973,20 +973,25 @@ header {
 }
 
 .shareCartLike {
+	display: flex;
 	position: relative;
 	bottom: 2px; 
 }
 
 .shareCartLike a:first-child {
-	margin-right: 25px; 
+	margin-right: 80px;
 }
 
 .shareCartLike a:last-child {
 	margin-right: 25px; 
 }
 
-.shareCartLike a:nth-child(2) {
-	margin-right: 30px; 
+.shareCartLike .cartIcon {
+	margin-left: 40px;
+
+
+	bottom: 27px;
+	position: absolute;
 }
 
 .orderNow {
@@ -1004,11 +1009,21 @@ header {
 	border-radius: 24px;
 	position: relative; 
 	bottom: 15px;
+	margin-left: 20px;
 }
 
 .orderNow:hover {
 	cursor: pointer;
 	background: #4a535e;
+}
+
+.cartIcon, .cartIcon:active {
+	border: none;
+	background: none;
+}
+
+.cartIcon:hover {
+	cursor: pointer;
 }
 
 /* Products */
