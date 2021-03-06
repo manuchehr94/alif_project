@@ -951,6 +951,11 @@ header {
 	margin-right: 17px; 
 }
 
+.increaseQunatity:hover, .decreaseQunatity:hover {
+	cursor: pointer;
+}
+
+
 .chooseQunatity p a {
 	text-decoration: none;
 	color: #646d75; 

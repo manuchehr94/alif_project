@@ -42,9 +42,9 @@ include_once __DIR__ . "/../header.php";
                     <div class="chooseQunatity">
                         <span class="chooseQunatityText">Choose quantity</span>
                         <p>
-                            <a class="increaseQunatity" href="#"><span>+</span></a>
-                            <span class="quantity"><?=$oneProduct['quantity']?></span>
-                            <a  class="decreaseQunatity" href="#"><span>-</span></a>
+                            <button class="increaseQunatity"><span>+</span></button>
+                            <span class="quantity">1</span>
+                            <button class="decreaseQunatity"><span>-</span></button>
                         </p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ include_once __DIR__ . "/../header.php";
                                 <a href="#"><img src="/img/share.png" alt="share"></a>
                                 <button class="cartIcon"><img src="/img/cart_.png" alt="add to cart"></button>
                                 <a href="#"><img src="/img/like.png" alt="put like"></a>
-                                <input type="hidden" name="quantity" value="2">
+                                <input type="hidden" name="quantity" value="1" class="productQuantity">
                                 <input type="hidden" name="product_id" value="<?=$oneProduct['id']?>">
                                 <button class="orderNow">Order Now</button>
                             </div>

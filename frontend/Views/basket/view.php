@@ -7,9 +7,8 @@
         <div id="basket_container">
             <!-- Красиво оформить-->
             <?php if(empty($items) || !is_array($items)) : ?>
-                <div>
-                    <div><br><br><br><br><br><br></div>
-                    <p style="text-align: center">The basket is empty</p>
+                <div style="position: relative; height: 100px;">
+                    <p style="text-align: center; position: absolute; top: 50%; left: 45%;">The basket is empty</p>
                 </div>
             <?php else: ?>
             <table class="table">
