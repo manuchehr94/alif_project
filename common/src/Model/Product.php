@@ -4,6 +4,8 @@ include_once __DIR__ . "/../Service/DBConnector.php";
 
 class Product
 {
+    const NUMBER_PRODUCTS_PER_PAGE = 15;
+
     public $id;
     public $title;
     public $picture;
@@ -72,7 +74,7 @@ class Product
          mysqli_query($this->conn, $query);
     }
 
-    public function all($categoryIds = [])
+    public function all($categoryIds = [], $limit = self::NUMBER_PRODUCTS_PER_PAGE, $offset = 0)
     {
         $where = (!empty($categoryIds)) ?
             ' WHERE cp.category_id IN (' . implode(',', $categoryIds) . ')' : '';
@@ -85,7 +87,7 @@ class Product
                                       products
                                       left join category_product cp on
                                       products.id = cp.product_id
-                                      $where order by id DESC");
+                                      $where order by id DESC limit $offset, $limit");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }

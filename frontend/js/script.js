@@ -26,4 +26,9 @@ $(function() {
 		$(".productQuantity").attr("value", $(".quantity").text());
 	});
 
+	$(".searchIcon").click(function(){
+		$(".productSearch, .productSearch input").toggleClass("active");
+		$("input[type='text']").focus();
+	});
+
 });

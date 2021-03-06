@@ -9,6 +9,9 @@ class ProductController
     {
         $categories = isset($_GET['category_id']) ? explode(',', $_GET['category_id']) : [];
 
+        $limit = intval($_GET['limit'] ?? Product::NUMBER_PRODUCTS_PER_PAGE);
+        $offset = (intval($_GET['page']) - 1) * $limit;
+
         $allProducts = (new Product())->all($categories);
         include_once __DIR__ . "/../../Views/product/List.php";
     }

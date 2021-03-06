@@ -57,7 +57,13 @@
                 </ul>
             </nav>
             <div class="searchUserCart righted">
-                <a href="#"><img src="/img/search.png" alt="search" title="search"></a>
+<!--                <a href="#"><img src="/img/search.png" alt="search" title="search"></a>-->
+                <div class="productSearch">
+                    <form>
+                        <input type="text" placeholder="Search">
+                        <img class="searchIcon" src="/img/search.png" alt="search" title="search" aria-hidden="true">
+                    </form>
+                </div>
                 <?=!empty($currentUser['login']) ? 'Hello, ' . $currentUser['login'] . '!' .
                     '<a href="/?model=auth&action=logout">Sign out</a>' :
                     '<a href="/?model=site&action=login"><img src="/img/user.png" alt="user" title="user"></a>'
