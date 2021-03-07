@@ -60,13 +60,14 @@
 <!--                <a href="#"><img src="/img/search.png" alt="search" title="search"></a>-->
                 <div class="productSearch">
                     <form>
-                        <input type="text" placeholder="Search">
+                        <input class="productSearchInput" type="text" placeholder="Search">
                         <img class="searchIcon" src="/img/search.png" alt="search" title="search" aria-hidden="true">
                     </form>
                 </div>
-                <?=!empty($currentUser['login']) ? 'Hello, ' . $currentUser['login'] . '!' .
-                    '<a href="/?model=auth&action=logout">Sign out</a>' :
-                    '<a href="/?model=site&action=login"><img src="/img/user.png" alt="user" title="user"></a>'
+                <div class="currentUser">
+                <?=!empty($currentUser['login']) ? '<div>Hello, ' . $currentUser['login'] . '!</div>' .
+                    '<div><a href="/?model=auth&action=logout">Sign out</a></div></div>' :
+                    '<a href="/?model=site&action=login"><img  src="/img/user.png" alt="user" title="user"></a>'
                 ?>
                 <?=!empty($currentUser['login']) ?
                     '<a href="?model=basket&action=view"><img src="/img/cart.png" alt="cart" title="cart"></a>' : ''

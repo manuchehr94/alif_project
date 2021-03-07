@@ -79,7 +79,6 @@ class Product
         $where = (!empty($categoryIds)) ?
             ' WHERE cp.category_id IN (' . implode(',', $categoryIds) . ')' : '';
 
-
         $result = mysqli_query($this->conn,
                                 "Select 
                                       products.* 
@@ -90,6 +89,18 @@ class Product
                                       $where order by id DESC limit $offset, $limit");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
+
+    public function getNumberPage($categoryIds = [], $limit = self::NUMBER_PRODUCTS_PER_PAGE)
+    {
+        $where = (!empty($categoryIds) && is_array($categoryIds)) ?
+            ' WHERE cp.category_id IN (' . implode(',', $categoryIds) . ')' : '';
+
+        $count = mysqli_query($this->conn,"SELECT COUNT(`id`) FROM `products` $where");
+        $count = mysqli_fetch_all($count, MYSQLI_ASSOC);
+        $count = $count[0]['COUNT(`id`)'];
+
+        return floor($count / $limit);
     }
 
     public function getById($id)

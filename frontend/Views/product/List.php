@@ -36,47 +36,17 @@
                             <a class="cartIcon" href="#"><img src="/img/addToCart.png" alt="addToCart"></a>
                             <a class="likeIcon" href="#"><img src="/img/like.png" alt="putLike"></a>
                         </div>
-                    </div>
-                    <div class="item">
-                        <a class="productImg" href="#"><img src="/img/Product4.png" alt="photo"></a>
-                        <h2 class="trackJacket">Reebok Track Jacket</h2>
-                        <p class="productCost">100$</p>
-                    </div>
-                    <div class="item">
-                        <a class="productImg" href="#"><img src="/img/Product2.png" alt="photo"></a>
-                        <h2 class="trackJacket">Reebok Track Jacket</h2>
-                        <p class="productCost">100$</p>
-                    </div>
-                    <div class="item">
-                        <a class="productImg" href="#"><img src="/img/Product1.png" alt="photo"></a>
-                        <h2 class="trackJacket">Reebok Track Jacket</h2>
-                        <p class="productCost">100$</p>
-                    </div>
-                    <div class="item">
-                        <a class="productImg" href="#"><img src="/img/Product4.png" alt="photo"></a>
-                        <h2 class="trackJacket">Reebok Track Jacket</h2>
-                        <p class="productCost">100$</p>
-                    </div>
-                    <div class="item">
-                        <a class="productImg" href="#"><img src="/img/Product2.png" alt="photo"></a>
-                        <h2 class="trackJacket">Reebok Track Jacket</h2>
-                        <p class="productCost">100$</p>
-                    </div>
-                    <div class="item">
-                        <a class="productImg" href="#"><img src="/img/Product1.png" alt="photo"></a>
-                        <h2 class="trackJacket">Reebok Track Jacket</h2>
-                        <p class="productCost">100$</p>
-                    </div>
-                    <div class="item">
-                        <a class="productImg" href="#"><img src="/img/Product4.png" alt="photo"></a>
-                        <h2 class="trackJacket">Reebok Track Jacket</h2>
-                        <p class="productCost">100$</p>
                     </div>-->
                 </div>
-                <div class="moreProducts2">
-                    <div class="loadMore"></div>
-                    <div class="loadMore"></div>
-                    <div class="loadMore"></div>
+                <div>
+                    <a href="/?model=product&action=all&<?=isset($_GET['category_id']) ? 'category_id=' . $_GET['category_id'] . '&limit=' . $moreContent:
+                                                'limit=' . $moreContent?>">
+                        <div class="moreProducts2">
+                            <div class="loadMore"></div>
+                            <div class="loadMore"></div>
+                            <div class="loadMore"></div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

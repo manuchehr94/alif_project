@@ -27,8 +27,8 @@ $(function() {
 	});
 
 	$(".searchIcon").click(function(){
-		$(".productSearch, .productSearch input").toggleClass("active");
-		$("input[type='text']").focus();
+		$(".productSearch, .productSearch .productSearchInput").toggleClass("active");
+		$(".productSearchInput").focus();
 	});
 
 });

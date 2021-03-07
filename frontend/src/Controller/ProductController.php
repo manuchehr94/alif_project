@@ -10,9 +10,16 @@ class ProductController
         $categories = isset($_GET['category_id']) ? explode(',', $_GET['category_id']) : [];
 
         $limit = intval($_GET['limit'] ?? Product::NUMBER_PRODUCTS_PER_PAGE);
-        $offset = (intval($_GET['page']) - 1) * $limit;
+        $additionalLimit = intval(Product::NUMBER_PRODUCTS_PER_PAGE);
 
-        $allProducts = (new Product())->all($categories);
+        $offset = (intval($_GET['page'] ?? 1) - 1) * $limit;
+        $offset = $offset < 0 ? 0 : $offset;
+
+        $moreContent = $limit + $additionalLimit;
+
+        $allProducts = (new Product())->all($categories, $limit, $offset);
+        $totalProducts = (new Product())->getNumberPage($categories, $limit);
+
         include_once __DIR__ . "/../../Views/product/List.php";
     }
 
