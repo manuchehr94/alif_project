@@ -22,10 +22,8 @@
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/Views/product/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/product/List.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/ProductController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,6 +139,19 @@
       <workItem from="1614925910014" duration="12118000" />
       <workItem from="1615015390510" duration="14866000" />
       <workItem from="1615101297589" duration="15286000" />
+      <workItem from="1615181789172" duration="7720000" />
+      <workItem from="1615267572137" duration="2666000" />
+      <workItem from="1615293196268" duration="9139000" />
+      <workItem from="1615447247378" duration="1866000" />
+      <workItem from="1615528715931" duration="2574000" />
+      <workItem from="1615532292145" duration="957000" />
+      <workItem from="1615540598964" duration="1391000" />
+      <workItem from="1615560160461" duration="1751000" />
+      <workItem from="1615629117863" duration="986000" />
+      <workItem from="1615652780342" duration="748000" />
+      <workItem from="1615654502492" duration="772000" />
+      <workItem from="1615698728568" duration="4000" />
+      <workItem from="1615818613017" duration="305000" />
     </task>
     <servers />
   </component>
@@ -164,10 +175,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="476" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1614527379404" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1613149193730">
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1615313386428">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1613149193730" />
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1615313386428" />
     <state x="400" y="106" key="NewPhpClassDialog" timestamp="1614869234476">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -180,10 +191,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="390" y="191" key="com.jetbrains.php.test.PhpNewTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1614238998449" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1614935213952">
+    <state x="339" y="172" key="run.anything.popup" timestamp="1615268439096">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1614935213952" />
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1615268439096" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1615048937705">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

@@ -76,7 +76,7 @@ class Product
 
     public function all($categoryIds = [], $limit = self::NUMBER_PRODUCTS_PER_PAGE, $offset = 0)
     {
-        $where = (!empty($categoryIds)) ?
+        $where = (!empty($categoryIds) && is_array($categoryIds)) ?
             ' WHERE cp.category_id IN (' . implode(',', $categoryIds) . ')' : '';
 
         $result = mysqli_query($this->conn,
@@ -91,16 +91,31 @@ class Product
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
-    public function getNumberPage($categoryIds = [], $limit = self::NUMBER_PRODUCTS_PER_PAGE)
+    public function totalProducts()
     {
+        $query = "SELECT COUNT(*) FROM `products`";
+        $count = mysqli_query($this->conn, $query);
+
+        $result = mysqli_fetch_all($count, MYSQLI_ASSOC);
+        $result2 = reset($result);
+        $result2 = reset($result2);
+
+        return $result2;
+    }
+
+    public function getLeftProducts($categoryIds = []) {
+
         $where = (!empty($categoryIds) && is_array($categoryIds)) ?
-            ' WHERE cp.category_id IN (' . implode(',', $categoryIds) . ')' : '';
+            ' WHERE category_id = (' . implode(',', $categoryIds) . ')' : '';
 
-        $count = mysqli_query($this->conn,"SELECT COUNT(`id`) FROM `products` $where");
-        $count = mysqli_fetch_all($count, MYSQLI_ASSOC);
-        $count = $count[0]['COUNT(`id`)'];
+        $query = "SELECT COUNT(`category_id`) FROM category_product $where";
+        $queryResult = mysqli_query($this->conn, $query);
+        $queryFetch = mysqli_fetch_all($queryResult, MYSQLI_ASSOC);
 
-        return floor($count / $limit);
+        $result = reset($queryFetch);
+        $result = reset($result);
+
+        return $result;
     }
 
     public function getById($id)

@@ -7,7 +7,8 @@ class ProductController
 {
     public function all()
     {
-        $categories = isset($_GET['category_id']) ? explode(',', $_GET['category_id']) : [];
+        $categories = (isset($_GET['category_id']) && !empty($_GET['category_id']))?
+                        explode(',', $_GET['category_id']) : [];
 
         $limit = intval($_GET['limit'] ?? Product::NUMBER_PRODUCTS_PER_PAGE);
         $additionalLimit = intval(Product::NUMBER_PRODUCTS_PER_PAGE);
@@ -18,7 +19,8 @@ class ProductController
         $moreContent = $limit + $additionalLimit;
 
         $allProducts = (new Product())->all($categories, $limit, $offset);
-        $totalProducts = (new Product())->getNumberPage($categories, $limit);
+        $totalProducts = (new Product())->totalProducts($categories, $limit);
+        $leftProducts = (new Product())->getLeftProducts($categories);
 
         include_once __DIR__ . "/../../Views/product/List.php";
     }

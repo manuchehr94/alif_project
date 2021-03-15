@@ -38,9 +38,12 @@
                         </div>
                     </div>-->
                 </div>
+
+                <?php if ((isset($_GET['category_id']) && ($leftProducts > $limit)) ||
+                        (!isset($_GET['category_id']) && ($moreContent < $totalProducts))): ?>
                 <div>
-                    <a href="/?model=product&action=all&<?=isset($_GET['category_id']) ? 'category_id=' . $_GET['category_id'] . '&limit=' . $moreContent:
-                                                'limit=' . $moreContent?>">
+                    <a href="/?model=product&action=all&<?=isset($_GET['category_id']) ?
+                        'category_id=' . $_GET['category_id'] . '&limit=' . $moreContent : 'limit=' . $moreContent?>">
                         <div class="moreProducts2">
                             <div class="loadMore"></div>
                             <div class="loadMore"></div>
@@ -48,6 +51,7 @@
                         </div>
                     </a>
                 </div>
+                <?php endif;?>
             </div>
         </div>
     </div>
