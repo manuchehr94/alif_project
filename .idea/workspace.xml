@@ -21,10 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Views/product/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/product/List.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/site/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Controller/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/SiteController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +53,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src/Command" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/Controller" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\src\Controller" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Model" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Command" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Fixtures" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\Views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Command" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Fixtures" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\Views" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Migrations" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Test" />
     </key>
   </component>
   <component name="RunManager">
@@ -151,7 +150,7 @@
       <workItem from="1615652780342" duration="748000" />
       <workItem from="1615654502492" duration="772000" />
       <workItem from="1615698728568" duration="4000" />
-      <workItem from="1615818613017" duration="305000" />
+      <workItem from="1615818613017" duration="3648000" />
     </task>
     <servers />
   </component>

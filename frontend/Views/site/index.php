@@ -2,6 +2,8 @@
 include_once __DIR__ . "/../header.php";
 ?>
 
+<?php print_r($allHotDeals); die();?>
+
 <div class="mainProduct">
     <div class="wrapper">
         <div class="featured">

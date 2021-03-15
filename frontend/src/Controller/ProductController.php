@@ -19,7 +19,7 @@ class ProductController
         $moreContent = $limit + $additionalLimit;
 
         $allProducts = (new Product())->all($categories, $limit, $offset);
-        $totalProducts = (new Product())->totalProducts($categories, $limit);
+        $totalProducts = (new Product())->totalProducts();
         $leftProducts = (new Product())->getLeftProducts($categories);
 
         include_once __DIR__ . "/../../Views/product/List.php";
