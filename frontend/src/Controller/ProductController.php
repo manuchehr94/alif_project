@@ -13,7 +13,7 @@ class ProductController
         $limit = intval($_GET['limit'] ?? Product::NUMBER_PRODUCTS_PER_PAGE);
         $additionalLimit = intval(Product::NUMBER_PRODUCTS_PER_PAGE);
 
-        $offset = (intval($_GET['page'] ?? 1) - 1) * $limit;
+        $offset = 0;
         $offset = $offset < 0 ? 0 : $offset;
 
         $moreContent = $limit + $additionalLimit;

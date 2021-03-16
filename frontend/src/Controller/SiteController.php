@@ -6,12 +6,21 @@ include_once __DIR__ . "/../../../common/src/Service/UserService.php";
 
 class SiteController
 {
+    const NUMBER_PRODUCTS_FOR_HOME_PAGE = 4;
+
     public function index()
     {
-        //$currentUser = UserService::getCurrentUser();
-        //print_r($currentUser);
-        $allProducts = (new Product())->all();
-        $allHotDeals = (new HotDeal())->all();
+        $limit = intval($_GET['limit'] ?? self::NUMBER_PRODUCTS_FOR_HOME_PAGE);
+        $additionalLimit = self::NUMBER_PRODUCTS_FOR_HOME_PAGE;
+
+        $moreContent = $limit + $additionalLimit;
+        $offset = 0;
+        $offset = $offset < 0 ? 0 : $offset;
+
+        $allProducts = (new Product())->all([], $limit, $offset);
+        $totalProducts = (new Product())->totalProducts();
+
+        $allHotDeals = (new HotDeal())->allWithDescription();
         include_once __DIR__ . "/../../Views/site/index.php";
     }
 

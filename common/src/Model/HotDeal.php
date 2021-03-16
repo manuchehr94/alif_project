@@ -4,8 +4,6 @@ include_once __DIR__ . "/../Service/DBConnector.php";
 
 class HotDeal
 {
-    const NUMBER_PRODUCTS_PER_PAGE = 15;
-
     public $id;
     public $toMainPage;
     public $title;
@@ -51,7 +49,7 @@ class HotDeal
                                          where id=" . $this->id . " limit 1";
 
         } else {
-            $query = "INSERT INTO `hot_deals` (id, to_main_page, title, description_id, content, price, sale) VALUES (
+            $query = "INSERT INTO `hot_deals` (`id`, `to_main_page`,`title`, `description_id`, `content`, `price`, `sale`) VALUES (
                                             null, 
                                             '" . $this->toMainPage . "', 
                                             '" . $this->title . "', 
@@ -65,12 +63,13 @@ class HotDeal
          mysqli_query($this->conn, $query);
     }
 
-    public function all()
+    public function allWithDescription()
     {
 
         $result = mysqli_query($this->conn,
                                 "Select 
                                       hd.id,
+                                      hd.to_main_page,
                                       hd.title,
                                       hd.content,
                                       hd.price,
@@ -82,6 +81,15 @@ class HotDeal
                                       hot_deals as hd
                                       left join hot_deals_description as hdd on
                                       hd.description_id = hdd.description_id");
+
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
+
+    public function all()
+    {
+
+        $result = mysqli_query($this->conn,
+            "Select * from `hot_deals`");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }

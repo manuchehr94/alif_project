@@ -95,6 +95,52 @@
                 </ul>
             </li>
             <li class="nav-item">
+                <a href="/?model=hotDeal&action=read" class="nav-link">
+                    <i class="nav-icon fas fa-table"></i>
+                    <p>
+                        Hot Deals
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/?model=hotDeal&action=create" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Create  Hot Deals</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/?model=hotDeal&action=read" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>List of  Hot Deals</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="/?model=hotDealDescription&action=read" class="nav-link">
+                    <i class="nav-icon fas fa-table"></i>
+                    <p>
+                        Hot Deals Desc
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/?model=hotDealDescription&action=create" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Create Hot Deals Desc</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/?model=hotDealDescription&action=read" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>List of Hot Deals Desc</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
                 <a href="/?model=order&action=read" class="nav-link">
                     <i class="nav-icon fas fa-table"></i>
                     <p>
