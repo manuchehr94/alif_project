@@ -3,8 +3,19 @@
 
 class Rating
 {
+    /**
+     * @var int
+     */
     public $id;
-    public $productId;
-    public $rating;
 
+    /**
+     * @var int
+     */
+    public $productId;
+
+    /**
+     * @var float
+     *
+     */
+    public $rating;
 }

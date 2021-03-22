@@ -21,25 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/hotDeal/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/hotDeal/List.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Access.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Access.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Basket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/BasketItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/BasketItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Delivery.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Delivery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/HotDeal.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/HotDeal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/HotDealDescription.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/HotDealDescription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/OrderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/OrderItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Payment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/Command/command_auto_create_table_by_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Command/command_auto_create_table_by_model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/Shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/site/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Rating.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Rating.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +154,8 @@
       <workItem from="1615888865079" duration="11131000" />
       <workItem from="1615911195062" duration="1131000" />
       <workItem from="1616262481150" duration="3000" />
-      <workItem from="1616385490715" duration="3282000" />
+      <workItem from="1616385490715" duration="7540000" />
+      <workItem from="1616410159578" duration="4266000" />
     </task>
     <servers />
   </component>
@@ -198,10 +183,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1615313386428" />
-    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1616392359902">
+    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1616426699527">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1616392359902" />
+    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1616426699527" />
     <state x="518" y="307" key="NewPhpFileDialog" timestamp="1614253939757">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -214,9 +199,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1615899156953" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1615048937705">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1616426760654">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1615048937705" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1616426760654" />
   </component>
 </project>

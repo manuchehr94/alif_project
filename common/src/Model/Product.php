@@ -8,11 +8,32 @@ class Product extends AbstractModel
     const NUMBER_PRODUCTS_PER_PAGE = 15;
 
     public $id;
+
+    /**
+     * @var string
+     * @valid[maxlength=64]
+     */
+
     public $title;
     public $picture;
+
+    /**
+     * @var string
+     * @valid[maxlength=255]
+     */
     public $preview;
     public $content;
+
+    /**
+     * @var int
+     * @valid[type int, max=300]
+     */
     public $price;
+
+    /**
+     * @var int
+     * @valid[type int, max=300]
+     */
     public $status;
     public $created;
     public $updated;
