@@ -11,7 +11,7 @@ class Product extends AbstractModel
 
     /**
      * @var string
-     * @valid[maxlength=64]
+     * @valid {"type": "string", "maxlength": 64}
      */
 
     public $title;
@@ -19,20 +19,20 @@ class Product extends AbstractModel
 
     /**
      * @var string
-     * @valid[maxlength=255]
+     * @valid {"type": "string", "maxlength": 255}
      */
     public $preview;
     public $content;
 
     /**
      * @var int
-     * @valid[type int, max=300]
+     * @valid {"type": "int", "max": 30000, "min": 1}
      */
     public $price;
 
     /**
      * @var int
-     * @valid[type int, max=300]
+     * @valid {"type": "int"}
      */
     public $status;
     public $created;

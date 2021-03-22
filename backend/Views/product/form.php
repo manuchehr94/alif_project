@@ -1,5 +1,6 @@
 <?php
     include_once __DIR__ . "/../header.php";
+    include_once __DIR__ . "/../../../common/src/Service/MessageService.php";
 ?>
 
 <div class="content-wrapper">
@@ -20,6 +21,13 @@
     </section>
     <section class="content">
         <div class="card card-info">
+            <?php
+                $errorMessage = MessageService::displayError();
+                if(!empty($errorMessage)) : ?>
+                <div class="error">
+                    <?=$errorMessage?>
+                </div>
+                <?php endif; ?>
             <form class="form-horizontal" action="/?model=product&action=save" method="post" enctype="multipart/form-data">
                <div class="card-body">
                    <input value="<?=$oneProduct['id'] ?? "" ?>" type = "hidden" name ="id">

@@ -3,6 +3,9 @@
 include_once __DIR__ . "/AbstractController.php";
 include_once __DIR__ . "/../../../common/src/Model/Product.php";
 include_once __DIR__ . "/../../../common/src/Service/FileUploader.php";
+include_once __DIR__ . "/../../../common/src/Service/ValidationService.php";
+include_once __DIR__ . "/../../../common/src/Service/MessageService.php";
+include_once __DIR__ . "/../../../common/src/Service/ProductValidator.php";
 
 class ProductController extends AbstractController
 {
@@ -23,6 +26,10 @@ class ProductController extends AbstractController
 
             $filename = FileUploader::upload('products');
             $now = date("Y-m-d H:i:s", time());
+
+            if(!ProductValidator::validate()) {
+                return (!empty($_POST['id'])) ? $this->update($_POST['id']) : $this->create();
+            }
 
             $product = new Product(
                                 intval($_POST['id']),
@@ -49,9 +56,9 @@ class ProductController extends AbstractController
         return $this->read();
     }
 
-    public function update()
+    public function update($id = null)
     {
-        $id = (int)$_GET['id'];
+        $id = (!empty($id)) ? $id : (int)$_GET['id'];
 
         if(empty($id)) die("Undefined id");
 
