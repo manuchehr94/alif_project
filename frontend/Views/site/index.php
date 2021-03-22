@@ -10,9 +10,9 @@ include_once __DIR__ . "/../header.php";
                      <div class="featuredHead">
                         <h1 class="headline"><?=$allHotDeals[$k]['title']?></h1>
                         <p class="subtitle">
-                            <?=$allHotDeals[$k]['first_offer'] . ' + ' . $allHotDeals[$k]['second_offer'] .
-                                ' + ' . $allHotDeals[$k]['third_offer'];
-                            ?>
+                            <?=$allHotDeals[$k]['first_offer']?>
+                            <?=($allHotDeals[$k]['second_offer']) ? ' + ' . $allHotDeals[$k]['second_offer'] : '' ?>
+                            <?=$allHotDeals[$k]['third_offer'] ? ' + ' . $allHotDeals[$k]['third_offer'] : '' ?>
                         </p>
                         <p class="description">
                             <?=$allHotDeals[$k]['content']?>

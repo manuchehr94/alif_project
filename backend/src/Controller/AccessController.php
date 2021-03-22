@@ -43,8 +43,6 @@ class AccessController extends AbstractController
             $accesses[$item['role']][$item['permission']] = true;
         }
 
-
-
         $roles = (new Role())->all();
         $permissions = (new Permission())->all();
 

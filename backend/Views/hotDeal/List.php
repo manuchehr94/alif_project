@@ -7,6 +7,7 @@
                 <div class="row mb-2">
                     <div class="col-sm-6">
                         <h1>Hot Deals</h1>
+                        <h5>!!!PRODUCT WITH "To main Page" that equals to 1 will go to the main page!!!</h5>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">

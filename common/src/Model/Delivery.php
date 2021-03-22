@@ -1,8 +1,9 @@
 <?php
 
     include_once __DIR__ ."/../Service/DBConnector.php";
+    include_once __DIR__ ."/AbstractModel.php";
 
-class Delivery
+class Delivery extends AbstractModel
 {
     /**
      * @var int
@@ -27,11 +28,10 @@ class Delivery
     /**
      * @var false|mysqli
      */
-    private $conn;
 
     public function __construct($id = null, $title =null, $code = null, $priority = null)
     {
-        $this->conn = DBConnector::getInstance()->connect();
+        parent::__construct();
 
         $this->setId($id);
         $this->setTitle($title);

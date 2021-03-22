@@ -1,8 +1,9 @@
 <?php
 
 include_once __DIR__ . "/../Service/DBConnector.php";
+include_once __DIR__ . "/AbstractModel.php";
 
-class Product
+class Product extends AbstractModel
 {
     const NUMBER_PRODUCTS_PER_PAGE = 15;
 
@@ -16,8 +17,6 @@ class Product
     public $created;
     public $updated;
 
-    private $conn;
-
     public function __construct(
         $id = null,
         $title = null,
@@ -30,7 +29,7 @@ class Product
         $updated = null
     )
     {
-        $this->conn = DBConnector::getInstance()->connect();
+        parent::__construct();
 
         $this->id = $id;
         $this->title = $title;

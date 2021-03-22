@@ -21,12 +21,25 @@
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/site/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/site/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Views/hotDeal/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/hotDeal/List.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Access.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Access.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Basket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/BasketItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/BasketItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Delivery.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Delivery.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/Model/HotDeal.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/HotDeal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/HotDealDescription.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/HotDealDescription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/OrderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/OrderItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/Views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Views/site/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Controller/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/SiteController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,23 +69,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/Views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src/Command" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Command" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\Views" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Controller" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Model" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\src\Controller" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Command" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
     </key>
   </component>
   <component name="RunManager">
@@ -155,6 +168,9 @@
       <workItem from="1615698728568" duration="4000" />
       <workItem from="1615818613017" duration="3944000" />
       <workItem from="1615888865079" duration="11131000" />
+      <workItem from="1615911195062" duration="1131000" />
+      <workItem from="1616262481150" duration="3000" />
+      <workItem from="1616385490715" duration="3282000" />
     </task>
     <servers />
   </component>
@@ -182,10 +198,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1615313386428" />
-    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1614869234476">
+    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1616392359902">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1614869234476" />
+    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1616392359902" />
     <state x="518" y="307" key="NewPhpFileDialog" timestamp="1614253939757">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

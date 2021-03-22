@@ -2,8 +2,9 @@
 
     include_once __DIR__ . "/../Service/DBConnector.php";
     include_once __DIR__ . "/../Service/UserService.php";
+    include_once __DIR__ . "/AbstractModel.php";
 
-class User
+class User extends AbstractModel
 {
     const ROLE_USER_VALUE = 'ROLE USER';
 
@@ -37,11 +38,6 @@ class User
      */
     private $roles;
 
-    /**
-     * @var false|mysqli
-     */
-    private $conn;
-
     public function __construct(
                                 $id = null,
                                 $name = null,
@@ -51,7 +47,7 @@ class User
                                 $roles = []
                                 )
     {
-        $this->conn = DBConnector::getInstance()->connect();
+        parent::__construct();
 
         $this->setId($id);
         $this->setName($name);

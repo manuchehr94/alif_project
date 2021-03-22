@@ -1,8 +1,9 @@
 <?php
 
 include_once __DIR__ . "/../Service/DBConnector.php";
+include_once __DIR__ . "/AbstractModel.php";
 
-class HotDeal
+class HotDeal extends AbstractModel
 {
     public $id;
     public $toMainPage;
@@ -11,8 +12,6 @@ class HotDeal
     public $content;
     public $price;
     public $sale;
-
-    private $conn;
 
     public function __construct(
         $id = null,
@@ -24,8 +23,7 @@ class HotDeal
         $sale = null
     )
     {
-        $this->conn = DBConnector::getInstance()->connect();
-
+        parent::__construct();
         $this->id = $id;
         $this->toMainPage = $toMainPage;
         $this->title = $title;

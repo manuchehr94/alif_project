@@ -1,16 +1,15 @@
 <?php
 
 include_once __DIR__ . "/../Service/DBConnector.php";
+include_once __DIR__ . "/AbstractModel.php";
 
-class Permission
+class Permission extends AbstractModel
 {
     public $permission;
 
-    private $conn;
-
     public function __construct($permission = null)
     {
-        $this->conn = DBConnector::getInstance()->connect();
+       parent::__construct();
 
         $this->permission = $permission;
     }

@@ -1,8 +1,9 @@
 <?php
 
 include_once __DIR__ . "/../Service/DBConnector.php";
+include_once __DIR__ . "/AbstractModel.php";
 
-class Category
+class Category extends AbstractModel
 
 {
     public $id;
@@ -10,12 +11,9 @@ class Category
     public $groupId;
     public $parentId;
 
-    private $conn;
-
     public function __construct($id = null, $title = null, $groupId = null, $parentId = null)
     {
-        $this->conn = DBConnector::getInstance()->connect();
-
+        parent::__construct();
         $this->id = $id;
         $this->title = $title;
         $this->groupId = $groupId;
