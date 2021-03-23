@@ -71,7 +71,7 @@ class Product extends AbstractModel
     {
         if($this->id > 0) {
 
-            $query = "Update products set 
+            $query = "UPDATE products SET 
                                         title='" . $this->title . "', 
                                         preview='" . $this->preview . "', "
                                         . ((!empty($this->picture)) ? "picture='" . $this->picture . "'," : "") .
@@ -79,7 +79,7 @@ class Product extends AbstractModel
                                          price='" . $this->price . "', 
                                          status='" . $this->status . "', 
                                          updated='" . $this->updated . "' 
-                                         where id=" . $this->id . " limit 1";
+                                         WHERE id=" . $this->id . " LIMIT 1";
 
         } else {
             $query = "INSERT INTO products (id, title, picture, preview, content, price, status, created, updated) VALUES (
@@ -104,13 +104,13 @@ class Product extends AbstractModel
             ' WHERE cp.category_id IN (' . implode(',', $categoryIds) . ')' : '';
 
         $result = mysqli_query($this->conn,
-                                "Select 
+                                "SELECT 
                                       products.* 
-                                      from
+                                      FROM
                                       products
-                                      left join category_product cp on
+                                      LEFT JOIN category_product cp ON
                                       products.id = cp.product_id
-                                      $where order by id DESC limit $offset, $limit");
+                                      $where ORDER BY id DESC limit $offset, $limit");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
@@ -144,14 +144,14 @@ class Product extends AbstractModel
 
     public function getById($id)
     {
-        $result = mysqli_query($this->conn, "Select * from products where id = $id limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM products WHERE id = $id LIMIT 1");
         $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return reset($oneProduct);
     }
 
     public function deleteById($id)
     {
-        return mysqli_query($this->conn, "delete from products where id = $id limit 1");
+        return mysqli_query($this->conn, "DELETE FROM products WHERE id = $id LIMIT 1");
     }
 
 }

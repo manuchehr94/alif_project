@@ -44,7 +44,7 @@ class Permission extends AbstractModel
     {
         $permissions = [];
 
-        $result = mysqli_query($this->conn, "Select * from `rbac_permission`");
+        $result = mysqli_query($this->conn, "SELECT * FROM `rbac_permission`");
 
         foreach (mysqli_fetch_all($result, MYSQLI_ASSOC) as $item) {
             $permissions[] = $item['permission'];

@@ -41,7 +41,7 @@ class Access extends AbstractModel
 
     public function clear()
     {
-        $result = mysqli_query($this->conn, "TRUNCATE table rbac_access");
+        $result = mysqli_query($this->conn, "TRUNCATE TABLE rbac_access");
 
         if(!$result) {
             throw new Exception(mysqli_error($this->conn));
@@ -52,7 +52,7 @@ class Access extends AbstractModel
 
     public function all()
     {
-        $result = mysqli_query($this->conn, "Select * from rbac_access");
+        $result = mysqli_query($this->conn, "SELECT * FROM rbac_access");
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 

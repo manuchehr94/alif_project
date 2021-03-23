@@ -395,22 +395,22 @@ class Order extends AbstractModel
      */
     public function getFromId()
     {
-        $result = mysqli_query($this->conn, "Select * from orders where user_id = 
-                                                            " . $this->userId . " limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM orders WHERE user_id = 
+                                                            " . $this->userId . " LIMIT 1");
         $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return reset($oneProduct);
     }
 
     public function all()
     {
-        $result = mysqli_query($this->conn, "Select * from orders");
+        $result = mysqli_query($this->conn, "SELECT * FROM orders");
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
 
     public function getById($id)
     {
-        $result = mysqli_query($this->conn, "Select * from orders where id = " . $id . " limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM orders WHERE id = " . $id . " LIMIT 1");
         $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
         return reset($oneProduct);
@@ -420,10 +420,10 @@ class Order extends AbstractModel
     {
         $products = [];
 
-        $result = mysqli_query($this->conn, "Select order_item.quantity, 
+        $result = mysqli_query($this->conn, "SELECT order_item.quantity, 
                                                         products.*
                                                         FROM order_item
-                                                        LEFT JOIN products on 
+                                                        LEFT JOIN products ON 
                                                         order_item.product_id = products.id
                                                         WHERE order_id = " . $orderId);
 

@@ -27,15 +27,15 @@ class Basket extends AbstractModel
 
     public function getFromId()
     {
-        $result = mysqli_query($this->conn, "Select * from basket where user_id = 
-                                                            " . $this->userId . " limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM basket WHERE user_id = 
+                                                            " . $this->userId . " LIMIT 1");
         $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return reset($oneProduct);
     }
 
     public function deleteByUserId($userId)
     {
-        return mysqli_query($this->conn, "delete from basket where user_id = $userId limit 1");
+        return mysqli_query($this->conn, "DELETE FROM basket WHERE user_id = $userId LIMIT 1");
     }
 
 }

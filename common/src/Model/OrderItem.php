@@ -65,19 +65,19 @@ class OrderItem extends AbstractModel
 
     public function getByOrderId($orderId)
     {
-        $result = mysqli_query($this->conn, "Select * from order_item where order_id = $orderId");
+        $result = mysqli_query($this->conn, "SELECT * FROM order_item WHERE order_id = $orderId");
         $all = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return $all;
     }
 
     public function deleteProductByOrderId($productId, $orderId)
     {
-        return mysqli_query($this->conn, "delete from order_item where product_id = $productId and order_id = $orderId limit 1");
+        return mysqli_query($this->conn, "DELETE FROM order_item WHERE product_id = $productId and order_id = $orderId limit 1");
     }
 
     public function clearByOrderId($orderId)
     {
-        return mysqli_query($this->conn, "delete from order_item where order_id = $orderId");
+        return mysqli_query($this->conn, "DELETE FROM order_item WHERE order_id = $orderId");
     }
 
 }

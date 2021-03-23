@@ -86,22 +86,6 @@ include_once __DIR__ . "/../header.php";
                     <p class="productCost"><?=$allProducts[$i]['price']?>$</p>
                 </div>
             <?php endfor; ?>
-           <!--
-            <div class="item">
-                <a class="productImg" href="#"><img src="/img/Product2.png" alt="photo"></a>
-                <h2 class="trackJacket">Reebok Track Jacket</h2>
-                <p class="productCost">100$</p>
-            </div>
-            <div class="item">
-                <a class="productImg" href="#"><img src="/img/Product1.png" alt="photo"></a>
-                <h2 class="trackJacket">Reebok Track Jacket</h2>
-                <p class="productCost">100$</p>
-            </div>
-            <div class="item">
-                <a class="productImg" href="#"><img src="/img/Product4.png" alt="photo"></a>
-                <h2 class="trackJacket">Reebok Track Jacket</h2>
-                <p class="productCost">100$</p>
-            </div>-->
         </div>
     </div>
 </main>

@@ -7,13 +7,13 @@ class ShopController extends AbstractController
 {
     public function create()
     {
-        include_once __DIR__ . "/../../Views/shop/form.php";
+        include_once __DIR__ . "/../../views/shop/form.php";
     }
 
     public function read()
     {
         $allShops = (new Shop())->all();
-        include_once __DIR__ . "/../../Views/shop/List.php";
+        include_once __DIR__ . "/../../views/shop/List.php";
     }
 
     public function save()
@@ -49,7 +49,7 @@ class ShopController extends AbstractController
 
         if(empty($oneShop)) die("Shop is not found");
 
-        include_once __DIR__ . "/../../Views/shop/form.php";
+        include_once __DIR__ . "/../../views/shop/form.php";
     }
 
 }

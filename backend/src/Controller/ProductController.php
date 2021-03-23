@@ -11,13 +11,13 @@ class ProductController extends AbstractController
 {
     public function create()
     {
-        include_once __DIR__ . "/../../Views/product/form.php";
+        include_once __DIR__ . "/../../views/product/form.php";
     }
 
     public function read()
     {
         $allProducts = (new Product())->all();
-        include_once __DIR__ . "/../../Views/product/List.php";
+        include_once __DIR__ . "/../../views/product/List.php";
     }
 
     public function save()
@@ -68,6 +68,6 @@ class ProductController extends AbstractController
 
         if(empty($oneProduct)) die("Product is not found");
 
-        include_once __DIR__ . "/../../Views/product/form.php";
+        include_once __DIR__ . "/../../views/product/form.php";
     }
 }

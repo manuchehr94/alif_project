@@ -24,7 +24,7 @@ class News extends AbstractModel
     {
         if($this->id > 0) {
 
-            $query = "Update news set     title='" . $this->title . "', 
+            $query = "UPDATE news SET     title='" . $this->title . "', 
                                           content='" . $this->content . "',
                                           created='" . $this->created . "'
                                           where id=" . $this->id . " limit 1";
@@ -43,7 +43,7 @@ class News extends AbstractModel
 
     public function all()
     {
-        $result = mysqli_query($this->conn, "Select * from news order by id DESC");
+        $result = mysqli_query($this->conn, "SELECT * FROM news ORDER BY id DESC");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
 
@@ -51,14 +51,14 @@ class News extends AbstractModel
 
     public function getById($id)
     {
-        $result = mysqli_query($this->conn, "Select * from news where id = $id limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM news WHERE id = $id LIMIT 1");
         $oneNews = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return reset($oneNews);
     }
 
     public function deleteById($id)
     {
-        return mysqli_query($this->conn, "delete from news where id = $id limit 1");
+        return mysqli_query($this->conn, "DELETE FROM news WHERE id = $id LIMIT 1");
     }
 
 }

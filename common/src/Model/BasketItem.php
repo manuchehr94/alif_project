@@ -49,7 +49,7 @@ class BasketItem extends AbstractModel
             throw new Exception('Empty basket item field');
         }
 
-        $query = "UPDATE basket_item set quantity = " . $this->quantity . " 
+        $query = "UPDATE basket_item SET quantity = " . $this->quantity . " 
                             WHERE basket_id = " . $this->basketId . " 
                             AND product_id = " . $this->productId . " 
                             LIMIT 1";
@@ -63,19 +63,19 @@ class BasketItem extends AbstractModel
 
     public function getByBasketId($basketId)
     {
-        $result = mysqli_query($this->conn, "Select * from basket_item where basket_id = $basketId");
+        $result = mysqli_query($this->conn, "SELECT * FROM basket_item WHERE basket_id = $basketId");
         $all = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return $all;
     }
 
     public function deleteProductByBasketId($productId, $basketId)
     {
-        return mysqli_query($this->conn, "delete from basket_item where product_id = $productId and basket_id = $basketId limit 1");
+        return mysqli_query($this->conn, "DELETE FROM basket_item WHERE product_id = $productId AND basket_id = $basketId LIMIT 1");
     }
 
     public function clearByBasketId($basketId)
     {
-        return mysqli_query($this->conn, "delete from basket_item where basket_id = $basketId");
+        return mysqli_query($this->conn, "DELETE FROM basket_item WHERE basket_id = $basketId");
     }
 
 }

@@ -103,11 +103,11 @@ class Payment extends AbstractModel
     {
         if($this->id > 0) {
 
-            $query = "Update payment set 
+            $query = "UPDATE payment SET 
                                         title='" . $this->getTitle() . "', 
                                         code='" . $this->getCode() . "', 
                                         priority='" . $this->getPriority() . "'
-                                         where id=" . $this->getId() . " limit 1";
+                                         WHERE id=" . $this->getId() . " LIMIT 1";
 
         } else {
             $query = "INSERT INTO payment (`id`, `title`, `code`, `priority`) VALUES (
@@ -127,19 +127,19 @@ class Payment extends AbstractModel
 
     public function deleteById($id)
     {
-        return mysqli_query($this->conn, "delete from payment where id = $id limit 1");
+        return mysqli_query($this->conn, "DELETE FROM payment WHERE id = $id LIMIT 1");
     }
 
     public function getById($id)
     {
-        $result = mysqli_query($this->conn, "Select * from payment where id = $id limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM payment WHERE id = $id LIMIT 1");
         $oneDelivery = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return reset($oneDelivery);
     }
 
     public function all()
     {
-        $result = mysqli_query($this->conn, "Select * from payment order by id DESC");
+        $result = mysqli_query($this->conn, "SELECT * FROM payment ORDER BY id DESC");
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 

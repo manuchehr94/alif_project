@@ -22,7 +22,7 @@ class Shop extends AbstractModel
     {
         if($this->id > 0) {
 
-            $query = "Update shops set title='" . $this->title . "', 
+            $query = "UPDATE shops SET title='" . $this->title . "', 
                                           address='" . $this->address . "'
                                           where id=" . $this->id . " limit 1";
 
@@ -43,7 +43,7 @@ class Shop extends AbstractModel
 
     public function all()
     {
-        $result = mysqli_query($this->conn, "Select * from shops order by id DESC");
+        $result = mysqli_query($this->conn, "SELECT * FROM shops ORDER BY id DESC");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
 
@@ -51,14 +51,14 @@ class Shop extends AbstractModel
 
     public function getById($id)
     {
-        $result = mysqli_query($this->conn, "Select * from shops where id = $id limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM shops WHERE id = $id LIMIT 1");
         $oneShop = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return reset($oneShop);
     }
 
     public function deleteById($id)
     {
-        return mysqli_query($this->conn, "delete from shops where id = $id limit 1");
+        return mysqli_query($this->conn, "DELETE FROM shops WHERE id = $id LIMIT 1");
     }
 
 

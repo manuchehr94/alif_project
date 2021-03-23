@@ -21,22 +21,6 @@
                         <p class="productCost"><?=$allProducts[$i]['price']?>$</p>
                     </div>
                     <?php endfor; ?>
-                  <!-- <div class="item">
-                        <a class="productImg" href="#"><img src="/img/Product3.png" alt="photo"></a>
-                        <h2 class="trackJacket orangeColor">Reebok Track Jacket</h2>
-                        <p class="productSizes">sizes: s-m-l-xl</p>
-                        <div class="varianOfProducts">
-                            <div class="good productColor1"></div>
-                            <div class="good productColor2"></div>
-                            <div class="good productColor3"></div>
-                            <div class="good productColor4"></div>
-                        </div>
-                        <div class="productIcons">
-                            <a class="shareIcon" href="#"><img src="/img/share.png" alt="share"></a>
-                            <a class="cartIcon" href="#"><img src="/img/addToCart.png" alt="addToCart"></a>
-                            <a class="likeIcon" href="#"><img src="/img/like.png" alt="putLike"></a>
-                        </div>
-                    </div>-->
                 </div>
 
                 <?php if ((isset($_GET['category_id']) && ($leftProducts > $limit)) ||

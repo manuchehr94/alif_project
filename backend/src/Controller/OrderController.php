@@ -10,13 +10,13 @@ class OrderController extends AbstractController
     public function create()
     {
         $oneNews = [];
-        include_once __DIR__ . "/../../Views/orders/form.php";
+        include_once __DIR__ . "/../../views/orders/form.php";
     }
 
     public function read()
     {
         $allNews = (new Order())->all();
-        include_once __DIR__ . "/../../Views/orders/List.php";
+        include_once __DIR__ . "/../../views/orders/List.php";
     }
 
     public function save()
@@ -62,7 +62,7 @@ class OrderController extends AbstractController
 
         $oneNews = (new Order())->getById($_GET['id']);
 
-        include_once __DIR__ . "/../../Views/orders/form.php";
+        include_once __DIR__ . "/../../views/orders/form.php";
     }
 
     public function delete()

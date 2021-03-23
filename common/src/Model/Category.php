@@ -24,11 +24,11 @@ class Category extends AbstractModel
     {
         if($this->id > 0) {
 
-            $query = "Update categories set 
+            $query = "UPDATE categories SET 
                                         title='" . $this->title . "', 
                                         group_id='" . $this->groupId . "', 
                                          parent_id='" . $this->parentId . "'
-                                         where id=" . $this->id . " limit 1";
+                                         WHERE id=" . $this->id . " LIMIT 1";
 
         } else {
             $query = "INSERT INTO categories VALUES (
@@ -44,7 +44,7 @@ class Category extends AbstractModel
 
     public function all()
     {
-        $result = mysqli_query($this->conn, "Select * from categories order by id DESC");
+        $result = mysqli_query($this->conn, "SELECT * FROM categories ORDER BY id DESC");
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
@@ -56,7 +56,7 @@ class Category extends AbstractModel
             $where = ' WHERE group_id NOT IN (' . implode(',', $groups)  . ')';
         }
 
-        $result = mysqli_query($this->conn, "Select * from categories $where order by id ASC");
+        $result = mysqli_query($this->conn, "SELECT * FROM categories $where ORDER BY id ASC");
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
@@ -69,15 +69,15 @@ class Category extends AbstractModel
 //        }
 
         $result = mysqli_query($this->conn,
-                                    "Select 
+                                    "SELECT 
                                             categories.*,
-                                            cg.id as group_id,
-                                            cg.title as group_title
-                                            from 
+                                            cg.id AS group_id,
+                                            cg.title AS group_title
+                                            FROM 
                                             categories 
-                                            left join category_group cg
-                                            on group_id = cg.id
-                                            $where order by id ASC");
+                                            LEFT JOIN category_group cg
+                                            ON group_id = cg.id
+                                            $where ORDER BY id ASC");
 
         $categories = mysqli_fetch_all($result, MYSQLI_ASSOC);
         $groups = [];
@@ -95,14 +95,14 @@ class Category extends AbstractModel
 
     public function getById($id)
     {
-        $result = mysqli_query($this->conn, "Select * from categories where id = $id limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM categories WHERE id = $id LIMIT 1");
         $oneCategory = mysqli_fetch_all($result, MYSQLI_ASSOC);
         return reset($oneCategory);
     }
 
     public function deleteById($id)
     {
-        return mysqli_query($this->conn, "delete from categories where id = $id limit 1");
+        return mysqli_query($this->conn, "DELETE FROM categories WHERE id = $id LIMIT 1");
     }
 
 

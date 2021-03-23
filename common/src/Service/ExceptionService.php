@@ -11,7 +11,7 @@ class ExceptionService
         $code = $e->getCode();
         $message = $e->getMessage();
 
-        include_once __DIR__ . "/../../../$side/Views/Exception/400.php";
+        include_once __DIR__ . "/../../../$side/views/exception/400.php";
     }
 
 

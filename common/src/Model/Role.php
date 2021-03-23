@@ -24,7 +24,7 @@ class Role extends AbstractModel
     {
         $roles = [];
 
-        $result = mysqli_query($this->conn, "Select * from `rbac_role`");
+        $result = mysqli_query($this->conn, "SELECT * FROM `rbac_role`");
 
         foreach (mysqli_fetch_all($result, MYSQLI_ASSOC) as $item) {
             $roles[] = $item['role'];

@@ -8,12 +8,12 @@ class DeliveryController extends AbstractController
     public function read()
     {
         $all = (new Delivery())->all();
-        include_once __DIR__ . "/../../Views/delivery/List.php";
+        include_once __DIR__ . "/../../views/delivery/List.php";
     }
 
     public function create()
     {
-        include_once __DIR__ . "/../../Views/delivery/form.php";
+        include_once __DIR__ . "/../../views/delivery/form.php";
     }
 
     public function save()
@@ -50,7 +50,7 @@ class DeliveryController extends AbstractController
 
         if(empty($oneDelivery)) die("Delivery is not found");
 
-        include_once __DIR__ . "/../../Views/delivery/form.php";
+        include_once __DIR__ . "/../../views/delivery/form.php";
     }
 
 }

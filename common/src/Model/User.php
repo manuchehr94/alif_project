@@ -158,12 +158,12 @@ class User extends AbstractModel
     {
         if($this->id > 0) {
 
-            $query = "Update `user` set `name`='" . $this->getName() . "', 
+            $query = "UPDATE `user` SET `name`='" . $this->getName() . "', 
                                           phone='" . $this->getPhone() . "',
                                           email='" . $this->getEmail() . "',
                                           `password` ='" . $this->getPassword() . "',
                                           roles='" . json_encode($this->getRoles()) . "'
-                                          where id=" . $this->getId() . " limit 1";
+                                          WHERE id=" . $this->getId() . " LIMIT 1";
 
         } else {
             $query = "INSERT INTO `user` (id, `name`, phone, email, password, roles) VALUES (
@@ -189,7 +189,7 @@ class User extends AbstractModel
      */
     public function getById($id)
     {
-        $result = mysqli_query($this->conn, "Select * from `user` where id = '" . $id . "' limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM `user` WHERE id = '" . $id . "' LIMIT 1");
         $oneProduct = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
         return reset($oneProduct);
@@ -202,7 +202,7 @@ class User extends AbstractModel
      */
     public function getByEmail($email)
     {
-        $result = mysqli_query($this->conn, "Select * from `user` where email = '" . $email . "' limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM `user` WHERE email = '" . $email . "' LIMIT 1");
 
         if(!$result) {
             throw new Exception("User not found", 404);
@@ -224,8 +224,8 @@ class User extends AbstractModel
     {
         $permission = SecurityService::getPermissionNameByControllerAndAction($controller, $action);
 
-        $result = mysqli_query($this->conn, "Select * from `rbac_access` 
-                            where role in ('".  implode("','", $roles) ."') and permission = '$permission'");
+        $result = mysqli_query($this->conn, "SELECT * FROM `rbac_access` 
+                            WHERE role IN ('".  implode("','", $roles) ."') AND permission = '$permission'");
 
         if(!$result) {
             throw new Exception("Permission error", 400);

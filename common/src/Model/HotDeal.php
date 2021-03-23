@@ -37,14 +37,14 @@ class HotDeal extends AbstractModel
     {
         if($this->id > 0) {
 
-            $query = "Update `hot_deals` set 
+            $query = "UPDATE `hot_deals` SET 
                                         to_main_page='" . $this->toMainPage . "', 
                                         title='" . $this->title . "', 
                                         description_id='" . $this->descriptionId . "', 
                                          content='" . $this->content . "', 
                                          price='" . $this->price . "', 
                                          sale='" . $this->sale . "'
-                                         where id=" . $this->id . " limit 1";
+                                         WHERE id=" . $this->id . " LIMIT 1";
 
         } else {
             $query = "INSERT INTO `hot_deals` (`id`, `to_main_page`,`title`, `description_id`, `content`, `price`, `sale`) VALUES (
@@ -65,7 +65,7 @@ class HotDeal extends AbstractModel
     {
 
         $result = mysqli_query($this->conn,
-                                "Select 
+                                "SELECT 
                                       hd.id,
                                       hd.to_main_page,
                                       hd.title,
@@ -75,9 +75,9 @@ class HotDeal extends AbstractModel
                                       hdd.first_offer,
                                       hdd.second_offer,
                                       hdd.third_offer
-                                      from 
-                                      hot_deals as hd
-                                      left join hot_deals_description as hdd on
+                                      FROM 
+                                      hot_deals AS hd
+                                      LEFT JOIN hot_deals_description AS hdd ON
                                       hd.description_id = hdd.description_id");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -87,14 +87,14 @@ class HotDeal extends AbstractModel
     {
 
         $result = mysqli_query($this->conn,
-            "Select * from `hot_deals`");
+            "SELECT * FROM `hot_deals`");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
     public function getById($id)
     {
-        $result = mysqli_query($this->conn, "Select * from hot_deals where id = $id limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM hot_deals WHERE id = $id LIMIT 1");
         $oneHotDeal = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
         return reset($oneHotDeal);
@@ -102,7 +102,7 @@ class HotDeal extends AbstractModel
 
     public function deleteById($id)
     {
-        return mysqli_query($this->conn, "delete from hot_deals where id = $id limit 1");
+        return mysqli_query($this->conn, "DELETE FROM hot_deals WHERE id = $id LIMIT 1");
     }
 
 }

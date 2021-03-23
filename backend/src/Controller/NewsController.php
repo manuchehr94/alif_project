@@ -7,13 +7,13 @@ class NewsController extends AbstractController
 {
     public function create()
     {
-        include_once __DIR__ . "/../../Views/news/form.php";
+        include_once __DIR__ . "/../../views/news/form.php";
     }
 
     public function read()
     {
         $allNews = (new News())->all();
-        include_once __DIR__ . "/../../Views/news/List.php";
+        include_once __DIR__ . "/../../views/news/List.php";
     }
 
     public function save()
@@ -52,7 +52,7 @@ class NewsController extends AbstractController
 
         if(empty($oneNews)) die("News is not found");
 
-        include_once __DIR__ . "/../../Views/news/form.php";
+        include_once __DIR__ . "/../../views/news/form.php";
     }
 
 }

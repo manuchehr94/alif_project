@@ -13,6 +13,6 @@ class SiteController
 
     public function login()
     {
-        include_once __DIR__ . "/../../Views/site/login.php";
+        include_once __DIR__ . "/../../views/site/login.php";
     }
 }

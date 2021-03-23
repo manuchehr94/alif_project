@@ -32,12 +32,12 @@ class HotDealDescription extends AbstractModel
     {
         if($this->id > 0) {
 
-            $query = "Update `hot_deals_description` set 
+            $query = "UPDATE `hot_deals_description` SET 
                                         description_id='" . $this->descriptionId . "', 
                                         first_offer='" . $this->firstOffer . "', 
                                         second_offer='" . $this->secondOffer . "', 
                                          third_offer='" . $this->thirdOffer . "'
-                                         where id=" . $this->id . " limit 1";
+                                         WHERE id=" . $this->id . " LIMIT 1";
 
         } else {
             $query = "INSERT INTO `hot_deals_description` (`id`, `description_id`,`first_offer`, `second_offer`, `third_offer`) VALUES (
@@ -54,7 +54,7 @@ class HotDealDescription extends AbstractModel
 
     public function all()
     {
-        $result = mysqli_query($this->conn, "Select * from hot_deals_description");
+        $result = mysqli_query($this->conn, "SELECT * FROM hot_deals_description");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
@@ -62,7 +62,7 @@ class HotDealDescription extends AbstractModel
 
     public function getById($id)
     {
-        $result = mysqli_query($this->conn, "Select * from hot_deals_description where id = $id limit 1");
+        $result = mysqli_query($this->conn, "SELECT * FROM hot_deals_description WHERE id = $id LIMIT 1");
         $oneHotDeal = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
         return reset($oneHotDeal);
@@ -70,7 +70,7 @@ class HotDealDescription extends AbstractModel
 
     public function deleteById($id)
     {
-        return mysqli_query($this->conn, "delete from hot_deals_description where id = $id limit 1");
+        return mysqli_query($this->conn, "DELETE FROM hot_deals_description WHERE id = $id LIMIT 1");
     }
 
 }

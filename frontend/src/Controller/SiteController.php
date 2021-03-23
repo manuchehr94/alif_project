@@ -21,11 +21,11 @@ class SiteController
         $totalProducts = (new Product())->totalProducts();
 
         $allHotDeals = (new HotDeal())->allWithDescription();
-        include_once __DIR__ . "/../../Views/site/index.php";
+        include_once __DIR__ . "/../../views/site/index.php";
     }
 
     public function login()
     {
-        include_once __DIR__ . "/../../Views/site/login.php";
+        include_once __DIR__ . "/../../views/site/login.php";
     }
 }

@@ -7,13 +7,13 @@ class CategoryController extends AbstractController
 {
     public function create()
     {
-        include_once __DIR__ . "/../../Views/category/form.php";
+        include_once __DIR__ . "/../../views/category/form.php";
     }
 
     public function read()
     {
         $allCategories = (new Category())->all();
-        include_once __DIR__ . "/../../Views/category/List.php";
+        include_once __DIR__ . "/../../views/category/List.php";
     }
 
     public function save()
@@ -50,6 +50,6 @@ class CategoryController extends AbstractController
 
         if(empty($oneCategory)) die("Category is not found");
 
-        include_once __DIR__ . "/../../Views/category/form.php";
+        include_once __DIR__ . "/../../views/category/form.php";
     }
 }

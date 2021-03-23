@@ -7,13 +7,13 @@ class HotDealController extends AbstractController
 {
     public function create()
     {
-        include_once __DIR__ . "/../../Views/hotDeal/form.php";
+        include_once __DIR__ . "/../../views/hotDeal/form.php";
     }
 
     public function read()
     {
         $allHotDeals = (new HotDeal())->all();
-        include_once __DIR__ . "/../../Views/hotDeal/List.php";
+        include_once __DIR__ . "/../../views/hotDeal/List.php";
     }
 
     public function save()
@@ -54,6 +54,6 @@ class HotDealController extends AbstractController
 
         if(empty($oneHotDeal)) die("hotDeal is not found");
 
-        include_once __DIR__ . "/../../Views/hotDeal/form.php";
+        include_once __DIR__ . "/../../views/hotDeal/form.php";
     }
 }

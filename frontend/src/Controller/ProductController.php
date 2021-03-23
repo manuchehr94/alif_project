@@ -22,7 +22,7 @@ class ProductController
         $totalProducts = (new Product())->totalProducts();
         $leftProducts = (new Product())->getLeftProducts($categories);
 
-        include_once __DIR__ . "/../../Views/product/List.php";
+        include_once __DIR__ . "/../../views/product/List.php";
     }
 
     public function view()
@@ -46,7 +46,7 @@ class ProductController
                 throw new Exception('Product doesn\'t exist', 404);
             }
 
-            include_once __DIR__ . "/../../Views/product/view.php";
+            include_once __DIR__ . "/../../views/product/view.php";
 
         } catch (Exception $e) {
             ExceptionService::error($e,'frontend');

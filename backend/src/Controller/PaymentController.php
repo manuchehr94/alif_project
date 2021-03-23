@@ -8,12 +8,12 @@ class PaymentController extends AbstractController
     public function read()
     {
         $all = (new Payment())->all();
-        include_once __DIR__ . "/../../Views/payment/List.php";
+        include_once __DIR__ . "/../../views/payment/List.php";
     }
 
     public function create()
     {
-        include_once __DIR__ . "/../../Views/payment/form.php";
+        include_once __DIR__ . "/../../views/payment/form.php";
     }
 
     public function save()
@@ -50,7 +50,7 @@ class PaymentController extends AbstractController
 
         if(empty($onePayment)) die("Payment is not found");
 
-        include_once __DIR__ . "/../../Views/payment/form.php";
+        include_once __DIR__ . "/../../views/payment/form.php";
     }
 
 }
