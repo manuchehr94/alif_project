@@ -13,7 +13,7 @@ class ShopController extends AbstractController
     public function read()
     {
         $allShops = (new Shop())->all();
-        include_once __DIR__ . "/../../views/shop/List.php";
+        include_once __DIR__ . "/../../views/shop/list.php";
     }
 
     public function save()

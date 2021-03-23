@@ -6,12 +6,13 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Delivery</h1>
+                        <h1>Hot Deals</h1>
+                        <h5>!!!PRODUCT WITH "To main Page" that equals to 1 will go to the main page!!!</h5>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Delivery</li>
+                            <li class="breadcrumb-item active">Hot Deals</li>
                         </ol>
                     </div>
                 </div>
@@ -28,31 +29,32 @@
                         <thead class="thead-light">
                         <tr>
                             <th scope="col">Id</th>
+                            <th scope="col">To main page</th>
                             <th scope="col">Title</th>
-                            <th scope="col">Code</th>
-                            <th scope="col">Delivery</th>
-                            <th style="text-align: right;" scope="col">Actions</th>
+                            <th scope="col">Description Id</th>
+                            <th scope="col">Content</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Sale</th>
+                            <th scope="col">Actions</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <?php foreach ($all as $one): ?>
+                        <?php foreach ($allHotDeals as $hotDeals): ?>
                             <tr>
-                                <td><?=$one['id']?></td>
-                                <td><?=$one['title']?></td>
-                                <td><?=$one['code']?></td>
-                                <td><?=$one['priority']?></td>
+                                <td><?=$hotDeals['id']?></td>
+                                <td><?=$hotDeals['to_main_page']?></td>
+                                <td><?=$hotDeals['title']?></td>
+                                <td><?=$hotDeals['description_id']?></td>
+                                <td><?=$hotDeals['content']?></td>
+                                <td><?=$hotDeals['price']?></td>
+                                <td><?=($hotDeals['sale'] <= 90 ? $hotDeals['sale'] : 0)?></td>
                                 <td class="project-actions text-right">
-                                  <!--<a class="btn btn-primary btn-sm" href="#">
-                                        <i class="fas fa-folder">
-                                        </i>
-                                        View
-                                    </a>-->
-                                    <a class="btn btn-info btn-sm" href="/?model=delivery&action=update&id=<?=$one['id']?>">
+                                    <a class="btn btn-info btn-sm" href="/?model=hotDeal&action=update&id=<?=$hotDeals['id']?>">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Edit
                                     </a>
-                                    <a class="btn btn-danger btn-sm" href="/?model=delivery&action=delete&id=<?=$one['id']?>">
+                                    <a class="btn btn-danger btn-sm" href="/?model=hotDeal&action=delete&id=<?=$hotDeals['id']?>">
                                         <i class="fas fa-trash">
                                         </i>
                                         Delete

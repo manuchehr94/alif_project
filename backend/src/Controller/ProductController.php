@@ -17,7 +17,7 @@ class ProductController extends AbstractController
     public function read()
     {
         $allProducts = (new Product())->all();
-        include_once __DIR__ . "/../../views/product/List.php";
+        include_once __DIR__ . "/../../views/product/list.php";
     }
 
     public function save()

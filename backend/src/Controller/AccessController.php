@@ -46,7 +46,7 @@ class AccessController extends AbstractController
         $roles = (new Role())->all();
         $permissions = (new Permission())->all();
 
-        include_once __DIR__ . "/../../views/access/form.php";
+        include_once __DIR__ . "/../../views/access/list.php";
     }
 
 }

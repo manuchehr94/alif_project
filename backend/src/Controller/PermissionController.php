@@ -13,7 +13,7 @@ class PermissionController extends AbstractController
     public function read()
     {
         $allPermissions = (new Permission())->all();
-        include_once __DIR__ . "/../../views/permission/List.php";
+        include_once __DIR__ . "/../../views/permission/list.php";
     }
 
     /**

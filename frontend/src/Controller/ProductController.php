@@ -22,7 +22,7 @@ class ProductController
         $totalProducts = (new Product())->totalProducts();
         $leftProducts = (new Product())->getLeftProducts($categories);
 
-        include_once __DIR__ . "/../../views/product/List.php";
+        include_once __DIR__ . "/../../views/product/list.php";
     }
 
     public function view()

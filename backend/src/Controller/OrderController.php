@@ -16,7 +16,7 @@ class OrderController extends AbstractController
     public function read()
     {
         $allNews = (new Order())->all();
-        include_once __DIR__ . "/../../views/orders/List.php";
+        include_once __DIR__ . "/../../views/orders/list.php";
     }
 
     public function save()

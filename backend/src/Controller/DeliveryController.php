@@ -8,7 +8,7 @@ class DeliveryController extends AbstractController
     public function read()
     {
         $all = (new Delivery())->all();
-        include_once __DIR__ . "/../../views/delivery/List.php";
+        include_once __DIR__ . "/../../views/delivery/list.php";
     }
 
     public function create()

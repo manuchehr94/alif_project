@@ -6,12 +6,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Payment</h1>
+                        <h1>Delivery</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Payment</li>
+                            <li class="breadcrumb-item active">Delivery</li>
                         </ol>
                     </div>
                 </div>
@@ -42,17 +42,12 @@
                                 <td><?=$one['code']?></td>
                                 <td><?=$one['priority']?></td>
                                 <td class="project-actions text-right">
-                                  <!--<a class="btn btn-primary btn-sm" href="#">
-                                        <i class="fas fa-folder">
-                                        </i>
-                                        View
-                                    </a>-->
-                                    <a class="btn btn-info btn-sm" href="/?model=payment&action=update&id=<?=$one['id']?>">
+                                    <a class="btn btn-info btn-sm" href="/?model=delivery&action=update&id=<?=$one['id']?>">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Edit
                                     </a>
-                                    <a class="btn btn-danger btn-sm" href="/?model=payment&action=delete&id=<?=$one['id']?>">
+                                    <a class="btn btn-danger btn-sm" href="/?model=delivery&action=delete&id=<?=$one['id']?>">
                                         <i class="fas fa-trash">
                                         </i>
                                         Delete

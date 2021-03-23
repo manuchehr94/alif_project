@@ -13,7 +13,7 @@ class HotDealDescriptionController extends AbstractController
     public function read()
     {
         $allHotDealsDesc = (new HotDealDescription())->all();
-        include_once __DIR__ . "/../../views/hotDealDescription/List.php";
+        include_once __DIR__ . "/../../views/hotDealDescription/list.php";
     }
 
     public function save()

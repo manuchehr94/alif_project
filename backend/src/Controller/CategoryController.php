@@ -13,7 +13,7 @@ class CategoryController extends AbstractController
     public function read()
     {
         $allCategories = (new Category())->all();
-        include_once __DIR__ . "/../../views/category/List.php";
+        include_once __DIR__ . "/../../views/category/list.php";
     }
 
     public function save()

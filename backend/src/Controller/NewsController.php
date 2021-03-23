@@ -13,7 +13,7 @@ class NewsController extends AbstractController
     public function read()
     {
         $allNews = (new News())->all();
-        include_once __DIR__ . "/../../views/news/List.php";
+        include_once __DIR__ . "/../../views/news/list.php";
     }
 
     public function save()

@@ -8,7 +8,7 @@ class PaymentController extends AbstractController
     public function read()
     {
         $all = (new Payment())->all();
-        include_once __DIR__ . "/../../views/payment/List.php";
+        include_once __DIR__ . "/../../views/payment/list.php";
     }
 
     public function create()
