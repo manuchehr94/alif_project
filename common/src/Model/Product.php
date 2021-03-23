@@ -13,8 +13,12 @@ class Product extends AbstractModel
      * @var string
      * @valid {"type": "string", "maxlength": 64}
      */
-
     public $title;
+
+    /**
+     * @var string
+     * @valid {"regx": "((.jpg)|(.png))"}
+     */
     public $picture;
 
     /**

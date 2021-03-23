@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Views/product/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Views/product/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/dist/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/dist/css/shop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/Model/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/Service/ValidationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/ValidationService.php" afterDir="false" />
@@ -61,18 +59,18 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Service" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
-      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Command" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\Views" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\backend\src\Controller" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Model" />
       <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\src\Controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\common\src\Service" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend\css" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop\frontend" />
+      <recent name="C:\xampp\htdocs\php\Alif_Academy_php\shop" />
     </key>
   </component>
   <component name="RunManager">
@@ -158,7 +156,8 @@
       <workItem from="1615911195062" duration="1131000" />
       <workItem from="1616262481150" duration="3000" />
       <workItem from="1616385490715" duration="7540000" />
-      <workItem from="1616410159578" duration="12571000" />
+      <workItem from="1616410159578" duration="13444000" />
+      <workItem from="1616482614119" duration="5340000" />
     </task>
     <servers />
   </component>
@@ -186,10 +185,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1615313386428" />
-    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1616438325060">
+    <state x="400" y="106" key="NewPhpClassDialog" timestamp="1616482849944">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1616438325060" />
+    <state x="400" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1616482849944" />
     <state x="518" y="307" key="NewPhpFileDialog" timestamp="1614253939757">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

@@ -27,6 +27,10 @@ class ValidationService
                     $result = self::minValidate($validateValue, $value);
                     if(!$result) return false;
                     break;
+                case 'regx':
+                    $result = self::regxValidate($validateValue, $value);
+                    if(!$result) return false;
+                    break;
             }
         }
 
@@ -83,5 +87,13 @@ class ValidationService
         return true;
     }
 
+    public static function regxValidate($validateValue, $value)
+    {
+        if(!preg_match($validateValue, $value)) {
+            MessageService::setError('Not a valid picture. Value = ' . $value);
+            return false;
+        }
 
+        return true;
+    }
 }
