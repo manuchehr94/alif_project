@@ -56,4 +56,19 @@ class Access extends AbstractModel
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
+    /**
+     * @param $name
+     * @throws Exception
+     */
+    public function deleteByName($name)
+    {
+        $query = "DELETE FROM `rbac_permission` WHERE permission = '$name' LIMIT 1";
+
+        $result = mysqli_query($this->conn, $query);
+
+        if(!$result) {
+            throw new Exception(mysqli_error($this->conn), 400);
+        }
+    }
+
 }

@@ -22,29 +22,9 @@
     <list default="true" id="e73099a4-b2a3-42a3-8601-10227ff91ae9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/AccessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/DeliveryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/DeliveryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/HotDealController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/HotDealController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/HotDealDescriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/HotDealDescriptionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/PaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/PermissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/PermissionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/access/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/access/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/category/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/category/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/delivery/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/delivery/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/hotDeal/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/hotDeal/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/hotDealDescription/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/hotDealDescription/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/news/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/news/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/orders/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/orders/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/payment/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/payment/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/permission/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/permission/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/product/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/product/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/shop/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/shop/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/product/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/product/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/access/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/access/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/access/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/access/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Access.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Access.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +158,7 @@
       <workItem from="1616262481150" duration="3000" />
       <workItem from="1616385490715" duration="7540000" />
       <workItem from="1616410159578" duration="13444000" />
-      <workItem from="1616482614119" duration="19507000" />
+      <workItem from="1616482614119" duration="22576000" />
     </task>
     <servers />
   </component>

@@ -31,12 +31,14 @@ class AccessController extends AbstractController
 
     public function delete()
     {
+        $name = htmlspecialchars($_GET['permission']);
+        (new Access())->deleteByName($name);
 
+        return $this->update();
     }
 
     public function update()
     {
-
         $accesses = [];
 
         foreach ((new Access())->all() as $item) {

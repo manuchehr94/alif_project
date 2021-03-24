@@ -40,14 +40,13 @@ include_once __DIR__ . "/../header.php";
                                                 <input type="checkbox" <?=(isset($accesses[$role][$permission]))
                                                     ? 'checked="checked"' : ''?> name="access[<?=$role?>][<?=$permission?>]">
                                             </td>
-                                            <td class="project-actions text-right">
-                                                <a class="btn btn-danger btn-sm" href="/?model=access&action=delete&id=<?=$role['id']?>">
-                                                    <i class="fas fa-trash">
-                                                    </i>
-                                                    Delete
-                                                </a>
-                                            </td>
                                         <?php  endforeach;?>
+                                        <td class="project-actions text-right">
+                                            <a class="btn btn-danger btn-sm" href="/?model=access&action=delete&permission=<?=$permission?>">                                                <i class="fas fa-trash">
+                                                </i>
+                                                Delete
+                                            </a>
+                                        </td>
                                     </tr>
                                 <?php endforeach;?>
                             </tbody>
