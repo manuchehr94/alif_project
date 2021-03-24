@@ -3,6 +3,7 @@
     include_once __DIR__ . "/../Model/Basket.php";
     include_once __DIR__ . "/../Model/BasketItem.php";
     include_once __DIR__ . "/../Service/BasketService.php";
+    include_once __DIR__ . "/../Service/UserService.php";
 
 class BasketDBService extends BasketService
 {
@@ -74,6 +75,23 @@ class BasketDBService extends BasketService
         }
 
         return (new Basket($userId))->getFromId()['id'];
+    }
+
+
+    public static function defineBasketDetails()
+    {
+        $user = UserService::getCurrentUser();
+
+        if(!isset($user['login'])) {
+            return [];
+            //throw new Exception("No permission", 403);
+        }
+
+        $basket = self::getBasketByUserId($user['id']);
+        //$this->basketService = (new BasketSessionService());
+        // $this->basketService = (new BasketCookieService());
+
+        return (new BasketDBService())->getBasketProducts((int)$basket['id']);
     }
 
 }

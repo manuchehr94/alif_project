@@ -1415,6 +1415,25 @@ header {
 	padding: 20px;
 }
 
+.cartAndDetails {
+	position: relative;
+}
+
+.cartAndDetails span {
+	position: absolute;
+	right: 35.5px;
+	bottom: 45px;
+	color: white;
+	font-family: "Harmonia Sans";
+}
+
+.cartItems {
+	position: relative;
+	bottom: 22px;
+	left: 2px;
+	text-decoration: none;
+}
+
 /* media-quaries*/
 
 @media screen and (max-width: 1180px) {

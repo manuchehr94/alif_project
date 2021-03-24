@@ -1,6 +1,10 @@
 <?php
     include_once __DIR__ . "/../../common/src/Service/UserService.php";
+    include_once __DIR__ . "/../../common/src/Service/BasketDBService.php";
+    include_once __DIR__ . "/../../common/src/Service/ProductService.php";
+
     $currentUser = UserService::getCurrentUser();
+    $basketDetails = (new ProductService())->getBasketItems(BasketDBService::defineBasketDetails());
 ?>
 
 <!doctype html>
@@ -57,7 +61,6 @@
                 </ul>
             </nav>
             <div class="searchUserCart righted">
-<!--                <a href="#"><img src="/img/search.png" alt="search" title="search"></a>-->
                 <div class="productSearch">
                     <form>
                         <input class="productSearchInput" type="text" placeholder="Search">
@@ -70,7 +73,14 @@
                     '<a href="/?model=site&action=login"><img  src="/img/user.png" alt="user" title="user"></a>'
                 ?>
                 <?=!empty($currentUser['login']) ?
-                    '<a href="?model=basket&action=view"><img src="/img/cart.png" alt="cart" title="cart"></a>' : ''
+                    '<div class="cartAndDetails">
+                        <a class="cartItems" href="?model=basket&action=view">
+                            <img src="/img/cart_items.png" alt="cart" title="cart">
+                        </a>' .
+                        '<span>' . sizeof($basketDetails['items'] ?? []) .
+                        '</span>
+                    </div>'
+                    : ''
                 ?>
             </div>
         </div>

@@ -15,22 +15,9 @@
                 <?php endforeach; ?>
             </ul>
         <?php endforeach; ?>
-
-<!--        <ul>-->
-<!--            <li><a href="#">Men</a></li>-->
-<!--            <li><a href="#">Women</a></li>-->
-<!--            <li><a href="#">Children</a></li>-->
-<!--            <li><a href="#">Hot deals</a></li>-->
-<!--        </ul>-->
     </div>
-    <div class="priceFilter divSpaces">
-        <!--	<p>
-              <label for="amount">Price range:</label>
-              <input type="text" id="amount">
-            </p>
 
-            <div id="slider-range"></div>
-        </div>-->
+    <div class="priceFilter divSpaces">
         <div class="priceFilterRange1">
             <h2>Price Filter</h2>
             <p class="priceFilterRangeText">
@@ -47,6 +34,7 @@
             <input type="text" class="priceRange">
         </p>
     </div>
+
     <div class="productSizesAndBrands divSpaces">
         <h2>Price Filter</h2>
         <ul>
@@ -56,6 +44,7 @@
             <li><a href="#">XLarge</a></li>
         </ul>
     </div>
+
     <div class="productSizesAndBrands divSpacesSpecial">
         <h2>Brands</h2>
         <ul>
