@@ -115,6 +115,13 @@ class Product extends AbstractModel
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
+    public function getAllForExport()
+    {
+        $result = mysqli_query($this->conn,"SELECT products.* FROM products ORDER BY id DESC ");
+
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
+
     public function totalProducts()
     {
         $query = "SELECT COUNT(*) FROM `products`";

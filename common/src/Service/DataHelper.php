@@ -10,4 +10,9 @@ class DataHelper
         }
         fclose($fp);
     }
+
+    public function getArrayFromCsvFile($file)
+    {
+        return array_map('str_getcsv', file($file));
+    }
 }
