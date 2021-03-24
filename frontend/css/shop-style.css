@@ -38,6 +38,7 @@
 }
 
 #btn-create-order,
+.priceFilterSubmit,
 .signOut a,
 .form-of-order button,
 .form-of-login input[type=submit]
@@ -50,12 +51,16 @@
     border: none;
 }
 
-.signOut a {
+.signOut a, .priceFilterSubmit {
     padding: 5px 10px;
 }
 
 .signOut {
     margin-top: 10px;
+}
+
+.priceFilterSubmit:hover {
+    cursor: pointer;
 }
 
 .form-of-order button {

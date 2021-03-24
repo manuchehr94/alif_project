@@ -28,15 +28,20 @@
             <input type="range" min="0" max="1100" value="1000" class="slider" id="higher">
         </div>
         <p class="priceFilterRange2">
-            <span>From</span>
-            <input type="text" class="priceRange">
-            <span>To</span>
-            <input type="text" class="priceRange">
+            <form action="" method="GET">
+            <input type="hidden" name="model" value="product">
+            <input type="hidden" name="action" value="priceFilter">
+                <span>From</span>
+                <input type="number" value="" name="minPrice" class="priceRange" min="0">
+                <span>To</span>
+                <input type="number" value="" name="maxPrice" class="priceRange" min="1">
+                <input class="priceFilterSubmit" type ="submit" value="Search">
+            </form>
         </p>
     </div>
 
     <div class="productSizesAndBrands divSpaces">
-        <h2>Price Filter</h2>
+        <h2>Sizes</h2>
         <ul>
             <li><a href="#">Small</a></li>
             <li><a href="#">Medium</a></li>

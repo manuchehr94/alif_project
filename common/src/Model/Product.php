@@ -110,7 +110,7 @@ class Product extends AbstractModel
                                       products
                                       LEFT JOIN category_product cp ON
                                       products.id = cp.product_id
-                                      $where ORDER BY id DESC limit $offset, $limit");
+                                      $where ORDER BY id DESC LIMIT $offset, $limit");
 
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
@@ -159,6 +159,29 @@ class Product extends AbstractModel
     public function deleteById($id)
     {
         return mysqli_query($this->conn, "DELETE FROM products WHERE id = $id LIMIT 1");
+    }
+
+    public function getByPrice($minPrice, $maxPrice, $offset, $limit)
+    {
+        $query = "SELECT * FROM products WHERE 
+                    price >= $minPrice AND price <= $maxPrice LIMIT $offset, $limit";
+        $queryResult = mysqli_query($this->conn, $query);
+
+        return mysqli_fetch_all($queryResult, MYSQLI_ASSOC);
+    }
+
+    public function countProductsByPrice($minPrice, $maxPrice)
+    {
+        $query = "SELECT COUNT(*) FROM products WHERE 
+                    price >= $minPrice AND price <= $maxPrice";
+        $queryResult = mysqli_query($this->conn, $query);
+
+        $queryFetch = mysqli_fetch_all($queryResult, MYSQLI_ASSOC);
+
+        $result = reset($queryFetch);
+        $result = reset($result);
+
+        return $result;
     }
 
 }
