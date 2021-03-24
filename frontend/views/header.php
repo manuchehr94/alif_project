@@ -69,8 +69,8 @@
                 </div>
                 <div class="currentUser">
                 <?=!empty($currentUser['login']) ? '<div>Hello, ' . $currentUser['login'] . '!</div>' .
-                    '<div><a href="/?model=auth&action=logout">Sign out</a></div></div>' :
-                    '<a href="/?model=site&action=login"><img  src="/img/user.png" alt="user" title="user"></a>'
+                    '<div class="signOut"><a href="/?model=auth&action=logout">Sign out</a></div></div>' :
+                    '<a class="linkToUser" href="/?model=site&action=login"><img  src="/img/user.png" alt="user" title="user"></a>'
                 ?>
                 <?=!empty($currentUser['login']) ?
                     '<div class="cartAndDetails">

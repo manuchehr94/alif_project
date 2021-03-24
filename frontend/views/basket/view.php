@@ -60,7 +60,9 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="/?model=order&action=index" id="btn-create-order">Create an order</a>
+            <div class="createAnOrder">
+                <a href="/?model=order&action=index" id="btn-create-order">Create an order</a>
+            </div>
             <?php endif; ?>
         </div>
     </div>
