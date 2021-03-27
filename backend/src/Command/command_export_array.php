@@ -12,7 +12,7 @@ $fileName = 'homework_' . date('YmdHis', time()) . '.csv';
 $path = 'C:/xampp/htdocs/php/';
 $fullFileName =  $path . $fileName;
 
-(new DataHelper())->saveArrayToCsvFile($array2x, $fullFileName);
+(new DataHelper())::saveArrayToCsvFile($array2x, $fullFileName);
 die("ОК");
 
 

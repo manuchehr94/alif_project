@@ -2,7 +2,7 @@
 
 class DataHelper
 {
-    public function saveArrayToCsvFile($array2x, $file)
+    public static function saveArrayToCsvFile($array2x, $file)
     {
         $fp = fopen($file, 'w');
         foreach ($array2x as $fields) {
@@ -11,7 +11,7 @@ class DataHelper
         fclose($fp);
     }
 
-    public function getArrayFromCsvFile($file)
+    public static function getArrayFromCsvFile($file)
     {
         return array_map('str_getcsv', file($file));
     }

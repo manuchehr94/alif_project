@@ -6,7 +6,7 @@ $fileName = 'homework.csv';
 $path = 'C:/xampp/htdocs/php/';
 $fullFileName =  $path . $fileName;
 
-(new DataHelper())->getArrayFromCsvFile($fullFileName);
+(new DataHelper())::getArrayFromCsvFile($fullFileName);
 die("ОК");
 
 
