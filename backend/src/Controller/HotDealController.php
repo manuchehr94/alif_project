@@ -27,7 +27,7 @@ class HotDealController extends AbstractController
                                 intval($_POST['description_id']),
                                 htmlspecialchars($_POST['content']),
                                 intval($_POST['price']),
-                                intval($_POST['sale'])
+                                intval($_POST['sale'] <= 90 ? $_POST['sale'] : 0)
             );
 
             $hotDeal->save();

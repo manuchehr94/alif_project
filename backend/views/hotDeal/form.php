@@ -56,7 +56,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Sale</label>
                         <div class="col-sm-10">
-                            <input value="<?=$oneHotDeal['sale'] ?? "" ?>" type="number" name ="sale" class="form-control">
+                            <input value="<?=($oneHotDeal['sale'] <= 90) ? $oneHotDeal['sale'] : 0 ?>" type="number" name ="sale" class="form-control">
                         </div>
                     </div>
                     <div class="form-group row">

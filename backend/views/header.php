@@ -31,6 +31,10 @@
             <span class="brand-text font-weight-light">AdminLTE 3</span>
         </a>
 
+        <div class="backendSignOut">
+            <a href="/?model=auth&action=logout" class="btn btn-primary btn-block">Sign out</a>
+        </div>
+
         <!-- Sidebar -->
         <?php include_once  __DIR__ . "/site/menu.php"; ?>
         <!-- /.sidebar -->

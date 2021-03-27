@@ -13,6 +13,10 @@ class SiteController
 
     public function login()
     {
+        if($_GET['model'] === 'site' && $_GET['action'] === 'login') {
+            $correctionOfFooter = "footer";
+        }
+
         include_once __DIR__ . "/../../views/site/login.php";
     }
 }
