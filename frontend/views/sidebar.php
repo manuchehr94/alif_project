@@ -21,24 +21,25 @@
         <div class="priceFilterRange1">
             <h2>Price Filter</h2>
             <p class="priceFilterRangeText">
-                <span>100$</span>
-                <span>1000$</span>
+                <span id="result-polzunok1"></span>
+                <span id="result-polzunok2"></span>
             </p>
-            <input type="range" min="0" max="1100" value="100" class="slider" id="lower">
-            <input type="range" min="0" max="1100" value="1000" class="slider" id="higher">
+            <div id="polzunok"></div>
         </div>
         <p class="priceFilterRange2">
             <form action="" method="GET">
             <input type="hidden" name="model" value="product">
             <input type="hidden" name="action" value="priceFilter">
                 <span>From</span>
-                <input type="number" value="" name="minPrice" class="priceRange" min="0">
+                <input type="number" id="send-result-polzunok1" value="send-result-polzunok1" name="minPrice" class="priceRange" min="0" max="1100">
                 <span>To</span>
-                <input type="number" value="" name="maxPrice" class="priceRange" min="1">
+                <input type="number" id="send-result-polzunok2" value="send-result-polzunok2" name="maxPrice" class="priceRange" min="1" max="1100">
                 <input class="priceFilterSubmit" type ="submit" value="Search">
             </form>
         </p>
     </div>
+
+
 
     <div class="productSizesAndBrands divSpaces">
         <h2>Sizes</h2>

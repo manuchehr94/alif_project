@@ -15,9 +15,12 @@
     <title>Shop_Mukhidinov</title>
     <link rel="stylesheet" type="text/css" href="/css/stars/fontawesome-all.css">
     <link rel="stylesheet" type="text/css" href="/css/stars/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css">
     <link href="/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/shop-style.css">
     <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/jquery.ui.touch-punch.min.js"></script>
     <script src="/js/script.js"></script>
 </head>
 <body>

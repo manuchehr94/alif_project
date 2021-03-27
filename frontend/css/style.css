@@ -1175,7 +1175,7 @@ header {
 }
 
 .priceFilterRangeText>span {
-	margin-right: 100px;
+	margin-right: 135px;
 }
 
 .slider {
@@ -1222,7 +1222,6 @@ header {
 	height: 11px;
 	background: #49525d;
 	cursor: pointer;
-
 	pointer-events: all;
 	position: relative;
 	z-index: 10;
